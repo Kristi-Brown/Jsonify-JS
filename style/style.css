@@ -1,0 +1,228 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #DED6D6;
+    ;
+}
+
+.cont__main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*==============================================================================
+                        HEADER
+==============================================================*/
+
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: #C4C4C4;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #F06449;
+    font-size: 23px;
+    position: relative;
+}
+
+.logo__tit {
+    font-weight: 400;
+    line-height: 60px;
+    font-family: 'Molengo', sans-serif;
+}
+
+/*          Triangle    */
+   .triangle__one::after {
+    content: ''; 
+    position: absolute; 
+    top:75px;
+    border: 20px solid transparent; 
+    border-top: 40px solid #C4C4C4; 
+   }
+
+   .triangle__two::after{
+    content: ''; 
+    position: absolute; 
+    top:95px;
+    left: 10px;
+    border: 10px solid transparent; 
+    border-top: 20px solid #F06449; 
+   }
+
+.triangle__right{
+    position: absolute;
+    top:0px;
+    left: 120px;
+}
+
+/*================================================
+                    FIELDS
+==================================================*/
+
+.fields__tb {
+    width: 1200px;
+    margin-top: 100px;
+}
+
+.fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.key__value {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.key__val.first {
+    padding-bottom: 0px;
+    margin-top: 30px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.create__block {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.line {
+    width: 100%;
+    height: 1.5px;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    background-color: rgba(240, 100, 73, 0.19);
+}
+
+.creat__but {
+    margin-top: 30px;
+    width: 60px;
+    align-self: center;
+}
+
+.tb {
+    width: 600px;
+}
+
+.tb__style {
+    width: 500px;
+    height: 500px;
+    resize: none;
+}
+
+/*================================================
+                INPUT BUTTON TextArea
+==================================================*/
+
+.key__val input {
+    padding-bottom: 5px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px solid #F06449;
+    color: #F06449;
+    font-weight: 700;
+    transition-duration: .3s;
+}
+
+.key__val input::placeholder {
+    color: #F06449;
+    opacity: .3;
+}
+
+.key__val input:focus {
+    outline: none;
+    background-color: #f0654948;
+    color: #fff;
+    transition-duration: .3s;
+}
+
+.key__val input:focus::placeholder {
+    color: #fff;
+    opacity: .5;
+    transition-duration: .3s;
+}
+
+.input__box {
+    margin-top: 30px;
+    width: 500px;
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.but__remove {
+    padding-top: 20px;
+    background-color: transparent;
+    border: 0;
+    color: #F06449;  
+}
+
+.but__remove span {
+    cursor: pointer;
+    user-select: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    transform: rotate(45deg);
+    transition-duration: .2s;
+}
+
+.but__remove span:hover{
+    color: #fff;
+    transform: rotate(135deg);
+    transition-duration: .2s;  
+}
+
+.creat__but{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #F06449;
+    background-color: #F06449;
+    font-size: 26px;
+    color: #fff;
+    transition-duration: .2s;
+}
+.creat__but:hover{
+    background-color: transparent;
+    color: #F06449;
+    transform: rotate(360deg);
+}
+
+.tb__style{
+    outline: none;
+    background: rgba(240, 100, 73, 0.3);
+    border: 0;
+    border-radius: 6px; 
+    color: #fff;
+    font-size: 18px;
+    padding: 30px;
+}
